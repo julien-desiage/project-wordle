@@ -83,6 +83,26 @@ h1 {
   max-width: min(500px, 58vh, 100%);
 }
 
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.keyboard-letter {
+  border: 2px solid var(--color-gray-700);
+  border-radius: var(--radius);
+  display: inline-block;
+  padding: 8px 16px;
+}
+
 .guess-results {
   flex: 1;
   display: flex;
@@ -124,17 +144,17 @@ h1 {
   --radius: 0px 0px 0px 4px;
 }
 
-.cell.correct {
+.correct {
   background: var(--color-success);
   border-color: var(--color-success);
   color: white;
 }
-.cell.incorrect {
+.incorrect {
   background: var(--color-gray-300);
   border-color: var(--color-gray-300);
   color: white;
 }
-.cell.misplaced {
+.misplaced {
   background: var(--color-warning);
   border-color: var(--color-warning);
   color: white;
